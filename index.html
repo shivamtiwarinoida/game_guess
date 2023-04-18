@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Shiv s Page</title>
+</head>
+<body>
+    <div class="headi">
+        <span>Hackathon</span>
+    </div>
+    <nav class="navbar">
+        <div class="left ">
+            <span class="logo">
+                <a href="index.html" class="home">Codejs</a>
+            </span>
+        </div>
+        <div class="right">
+            <ul>
+                <li class="home" id="time">time</li>
+                <li class="home"><a href="game.html">Game</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="contain">
+            <h1 class="h12"><u>Welcome</u></h1>
+            <p>Welcome to our home page of gaming website.</p><p>Click on Game button to Play game</p>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <p>Made by Shivam Tiwari</p>
+        <p>contact : +91 8700656319</p>
+        <p class="email">Email : shivamtiwariastudent@gmail.com</p>
+        <p>About : Simple student of engineering trying to explore new things..</p>
+    </footer>
+
+    <script>
+        let nd1 = new Date();
+        console.log(nd1);
+        const time1=document.getElementById('time');
+        let a=nd1.getHours();
+        let b=nd1.getMinutes();
+        let str=String(a)+":"+String(b);
+        console.log(str);
+        time1.innerHTML=str;
+    </script>
+</body>
+</html>
